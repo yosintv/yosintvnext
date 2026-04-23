@@ -37,7 +37,6 @@ jobs:
       - name: Build static export
         env:
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL != '' && vars.NEXT_PUBLIC_SITE_URL || 'https://yosintv.github.io' }}
         run: npm run build
 
       - name: Disable Jekyll
