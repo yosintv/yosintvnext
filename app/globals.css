@@ -1271,7 +1271,7 @@ input {
   }
 
   .ev {
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
   }
 
@@ -1286,6 +1286,9 @@ input {
   }
 
   .ev-t {
+    display: flex;
+    align-items: center;
+    min-height: 38px;
     font-size: 0.82rem;
     line-height: 1.35;
   }
