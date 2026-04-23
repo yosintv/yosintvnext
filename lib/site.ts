@@ -6,7 +6,7 @@ const normalizedBasePath =
   basePath && basePath !== "/" ? basePath.replace(/\/$/, "") : "";
 
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://yosintv.cricfoot.net";
 
 export function absoluteUrl(path = "/") {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
